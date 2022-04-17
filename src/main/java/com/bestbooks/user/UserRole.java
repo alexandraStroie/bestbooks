@@ -1,6 +1,6 @@
 package com.bestbooks.user;
 
-public enum UserType {
+public enum UserRole {
     ADMIN,
     AUTHOR,
     READER

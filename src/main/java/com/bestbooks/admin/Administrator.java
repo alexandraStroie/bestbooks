@@ -1,13 +1,14 @@
 package com.bestbooks.admin;
 
-import lombok.Data;
-import org.springframework.stereotype.Component;
+import com.bestbooks.user.User;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
-@Component
-public class Administrator {
-    private String email;
-    private String password;
-    private String firstName;
-    private String lastName;
+@Getter
+@Setter
+public class Administrator extends User {
+
+    public Administrator(String email, String password, String firstName, String lastName) {
+        super(email,password,firstName,lastName);
+    }
 }

@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class UserRepository {
@@ -30,11 +31,16 @@ public class UserRepository {
         // .remove
     }
 
-    public String findByEmail(String email) {
-        return "";
+    public User findByEmail(String email) {
+        return new User();
     }
 
     public User save(User user) {
         return new User();
+    }
+
+    //to do
+    public Optional<User> findById(long id) {
+        return Optional.of(new User());
     }
 }

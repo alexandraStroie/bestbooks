@@ -10,6 +10,7 @@ import java.util.List;
 @Setter
 @Getter
 @NoArgsConstructor
+@Component
 public class User {
 
     Long id;
@@ -18,7 +19,7 @@ public class User {
     String lastName;
     String email;
     String password;
-    UserType userType;
+    UserRole userRole;
 
     public User(String firstName, String lastName, String mail, String password){
         this.firstName = firstName;
@@ -32,6 +33,8 @@ public class User {
         return nrOfInstances++;
     }
 
-    public void setRoles(List<String> role_user) {
+    public void setUserRole(List<String> role_user) {
     }
+
+
 }
